@@ -1,0 +1,137 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainDark: #000;
+  --mainYellow: #ffa400;
+}
+.index {
+  z-index: -1;
+}
+
+.product {
+  width: 100%;
+  height: 400px;
+}
+body {
+  font-family: 'Oswald', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark);
+}
+.text-title {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+
+.navbar-brand {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+.navbar {
+  justify-content: flex-start !important;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+.btn-black:hover {
+  background: #cd9042 !important;
+  color: var(--mainWhite) !important;
+}
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+
+.home_image {
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  margin-bottom: -150px;
+  margin-top: 0;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+}
+
+.header_search {
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  margin: 0 auto;
+  width: 50%;
+}
+.searchIcon {
+  padding: 5px;
+  height: 22px;
+  background-color: #cd9042;
+}
+.color {
+  background-color: #cd9042;
+}
+.optionOne {
+  font-size: 10px;
+}
+.optionTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.checkoutCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}

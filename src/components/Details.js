@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from '../context'
-import { ButtonContainer } from './Button'
+import { ButtonContainer } from '../assets/Button'
 import { Link } from 'react-router-dom'
+import { Form,Header } from '../components'
+
 export default class Details extends Component {
   render() {
     return (
@@ -12,49 +14,43 @@ export default class Details extends Component {
 
           return (
             <div className='container py-5'>
-              {/* title */}
-              <div className='row'>
-                <div className='col-10 mx-auto text-center text-slanted text-blue my-5'>
-                  <h1>{title}</h1>
-                </div>
-              </div>
-              {/* end of title */}
+
               <div className='row'>
                 <div className='col-10 mx-auto col-md-6 my-3'>
                   <img src={img} className='img-fluid' alt='' />
                 </div>
+
+
                 {/* prdoduct info */}
                 <div className='col-10 mx-auto col-md-6 my-3 text-capitalize'>
-                  <h1>Title : {title}</h1>
-                  <h4 className='text-title text-uppercase text-muted mt-3 mb-2'>
-                    brand : <span className='text-uppercase'>{artist}</span>
-                  </h4>
-                  <h4 className='text-blue'>
-                    <strong>
-                      price : <span>Ksh</span>
-                      {price}
-                    </strong>
-                  </h4>
-                  <p className='text-capitalize font-weight-bold mt-3 mb-0'>
-                    some info about product :
-                  </p>
-                  <p className='text-muted lead'>{info}</p>
-                  {/* buttons */}
-                  <div>
-                    <Link to='/'>
-                      <ButtonContainer>back to products</ButtonContainer>
-                    </Link>
-                    <ButtonContainer
-                      cart
-                      disabled={inCart ? true : false}
-                      onClick={() => {
-                        value.addToCart(id)
-                        value.openModal(id)
-                      }}
-                    >
-                      {inCart ? 'in cart' : 'add to cart'}
-                    </ButtonContainer>
-                  </div>
+    
+        <Form>
+          <Form.Title>Request call back</Form.Title>
+           
+           <Form.Base  method='POST'>
+            <Form.Input
+              placeholder='Full Name'
+              name="username"
+              type="text"
+              
+            />
+            <Form.Input
+            type="text"
+            name="email"
+            placeholder='Phone Number'
+               
+            />
+
+            <Form.Submit  type='submit'>
+              Make an offer
+            </Form.Submit>
+          </Form.Base>
+          <Form.Text>
+            <Form.Link to='/'>Back</Form.Link>
+          </Form.Text>
+        </Form>
+ 
+          
                 </div>
               </div>
             </div>

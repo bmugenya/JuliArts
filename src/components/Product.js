@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import  React, { Component } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context'
+
+
 export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product
@@ -39,10 +41,10 @@ export default class Product extends Component {
             }}
           </ProductConsumer>
           <div className='card-footer d-flex justify-content-between'>
-            <p className='align-self-center mb-0'>{title}</p>
+            <p className='align-self-center mb-0'></p>
             <h5 className='text-blue font-italic mb-0'>
-              <span className='mr-1'>Ksh</span>
-              {price}
+              <span className='mr-1'></span>
+              
             </h5>
           </div>
         </div>

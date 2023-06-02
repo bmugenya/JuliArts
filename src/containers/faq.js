@@ -3,6 +3,9 @@ import faqsData from '../utils/faqs.json'
 import { Accordion, OptForm } from '../components'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { url } from "../utils/url.js"
+
+
 
 export function FaqsContainer() {
 
@@ -14,7 +17,7 @@ export function FaqsContainer() {
 
     try {
       // Send the email using an API endpoint on your server
-      await axios.post('http://localhost:5000/api/subscribe', { email });
+      await axios.post(`${url}/api/subscribe`, { email });
 
       // Clear the email input field
       setEmail('');

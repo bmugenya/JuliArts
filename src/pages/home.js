@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { FaqsContainer } from '../containers/faq'
-import { Feature, OptForm,Nav } from '../components'
+import { Feature, OptForm } from '../components'
 import Jumbotron from '../containers/jumbotron'
 import Footer from   '../containers/footer'
 import Header from '../containers/header'
@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProductList from "../components/ProductList";
 
-
+import { url } from "../utils/url.js"
 
 export default function Home() {
 
@@ -23,7 +23,7 @@ export default function Home() {
 
     try {
       // Send the email using an API endpoint on your server
-      const response = await axios.post('http://localhost:5000/api/subscribe', { email });
+      const response = await axios.post(`${url}/api/subscribe`, { email });
       setEmail('');
       toast(response.data.message);
     } catch (error) {

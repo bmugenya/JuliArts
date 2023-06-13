@@ -23,7 +23,7 @@
 
 
 .lyon{
-  color: rgb(233, 30, 99);
+  color: rgb(255, 23, 73);
 }
 
 .row_posters {
@@ -47,4 +47,11 @@
 
 .row_poster:hover {
   transform: scale(1.08);
+}
+
+.r_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
 }

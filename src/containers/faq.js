@@ -9,27 +9,7 @@ import { url } from "../utils/url.js"
 
 export function FaqsContainer() {
 
-     const [email, setEmail] = useState('');
 
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    try {
-      // Send the email using an API endpoint on your server
-      await axios.post(`${url}/api/subscribe`, { email });
-
-      // Clear the email input field
-      setEmail('');
-
-      // Display a success message to the user
-      toast('Email sent successfully!');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      // Display an error message to the user
-      toast('An error occurred while sending the email. Please try again.');
-    }
-  };
 
   return (
     <Accordion>
@@ -40,17 +20,7 @@ export function FaqsContainer() {
           <Accordion.Body>{item.body}</Accordion.Body>
         </Accordion.Item>
       ))}
-      <OptForm>
-        <OptForm.Break />
-          <OptForm.Base onSubmit={handleSubmit}>
-          
-          <OptForm.Input type="email"
-          placeholder="Enter your email address"
-          value={email}
-         onChange={({ target }) => setEmail(target.value)} />
-          <OptForm.Button type="submit">Get Started</OptForm.Button>
-             </OptForm.Base >
-      </OptForm>
+
     </Accordion>
   )
 }

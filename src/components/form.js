@@ -9,6 +9,7 @@ import {
   Link,
   Input,
   Submit,
+  Image,
 } from '../assets/form'
 export default function Form({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
@@ -42,4 +43,7 @@ Form.Input = function FormInput({ children, ...restProps }) {
 
 Form.Submit = function FormSubmit({ children, ...restProps }) {
   return <Submit {...restProps}>{children}</Submit>
+}
+Form.Image = function FormImage({ ...restProps }) {
+  return <Image {...restProps} />
 }

@@ -76,7 +76,7 @@ export const Input = styled.input`
 `
 
 export const Submit = styled.button`
-  background: #e50914;
+  background: #ff1749;
   border-radius: 4px;
   margin:24px 0 12px;
   border: 0;
@@ -90,4 +90,9 @@ export const Submit = styled.button`
   }
 
   }
+`
+
+export const Image = styled.img`
+  max-width: 100%;
+  height: auto;
 `

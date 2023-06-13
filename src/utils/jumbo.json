@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Art in Motion",
     "subTitle": "Discover a world where art comes alive! Become a member of our exclusive club and unlock a realm of personalized masterpieces. Our skilled artists will bring your vision to life, capturing your essence on canvas. Join the waitlist today and let your imagination take flight!",
-    "image": "/images/misc/j.jpeg",
+    "image": "/images/misc/j.png",
     "alt": "Tiger King on Netflix",
     "direction": "row-reverse"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Brush & Beyond",
     "subTitle": "Step into a realm where stories unfold through brushstrokes from vibrant landscapes to intimate portraits, our artists will transform your story into visual poetry. Immerse yourself in artistry—subscribe to Juliarts and elevate your tale to new heights!.",
-    "image": "/images/misc/t.jpeg",
+    "image": "/images/misc/t.png",
     "alt": "Watch on mobile",
     "direction": "row"
   }
